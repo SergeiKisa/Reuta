@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mine1.MainPage" 
+             BackgroundColor="WhiteSmoke">
+    <Grid BackgroundColor="{Binding Path=BG_color}" x:Name="MainGrid">
+        <StackLayout>
+            <Label Text="{Binding Path=Txt}" Margin="100" HorizontalOptions="Center"  />
+            <Button Text="Click" VerticalOptions="EndAndExpand" Margin="50" Command="{Binding Path=command}" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
